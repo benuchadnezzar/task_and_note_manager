@@ -1,0 +1,4 @@
+# Environment variables
+.env
+# Google Sheets service account
+service_account.json

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "task_manager"
+version = "0.1.0"
+description = ""
+authors = ["Ben Kulakofsky <benjamin.kulakofsky@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+click = ">=8.2.0"
+gspread = ">=6.1.2"
+gspread-formatting = ">=1.2.1"
+python-dotenv = ">=1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+task = "create_task:create_task"
+tracker = "create_tracker:create_tracker"
